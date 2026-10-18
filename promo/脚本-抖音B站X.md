@@ -226,7 +226,7 @@
 **简介栏**（可直接复制）：
 
 > 576 条职场规定，每条写清花掉什么、换回什么、依据在哪份文件第几条、证据有多硬。518 条的依据是法律法规、部委规章、官方统计原文，885 处链接可逐条点回原文。另有 7 条只查得到行业通行做法，如实标 C 级。
-> 网页版可直接搜索（搜书名《高性价比职场指南》），PDF / EPUB 同页可下。CC BY 4.0，转载署名即可。
+> 网页版可直接搜索（搜书名《高性价比职场指南》），PDF / EPUB 同页可下。正文 CC BY-NC 4.0：转载署名即可，禁止商用。
 > 本视频是规则整理，不构成法律意见。
 
 **为什么简介不放网址**：B站现行规则对简介里的站外链接降权，专栏只支持站内链接。放链接换降权不值，搜书名一样找得到。
@@ -250,7 +250,7 @@
 >
 > 5/ 885 links, each pointing at the source text, not at someone's summary. If a number in the book is wrong, you can find where it came from and prove it.
 >
-> 6/ Free, CC BY 4.0, redistribution and adaptation allowed with attribution. Searchable web version, PDF and EPUB: https://goodseafly.github.io/how-to-make-work-pay/
+> 6/ Free to read. Text licensed CC BY-NC 4.0 — share and adapt with attribution, no commercial use; the code is MIT. Searchable web version, PDF and EPUB: https://goodseafly.github.io/how-to-make-work-pay/
 
 ---
 

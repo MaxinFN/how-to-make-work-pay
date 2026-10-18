@@ -243,8 +243,8 @@ def main():
                 '数字口径以条目内标注为准，互不换算。每条引用的原文核对过程见页头右侧的 '
                 '<a href="docs/核实记录/00-目录.md">核实记录</a>。'
                 '正文按 '
-                '<a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans">CC BY 4.0</a> '
-                '发布，转载改编请署名并附原文链接。</div>\n  </div>') % (
+                '<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans">CC BY-NC 4.0</a> '
+                '发布：可转载改编，禁止商业使用，署名并附原文链接。</div>\n  </div>') % (
         datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))
     html = html.replace(old_foot, new_foot)
     html = must_sub(html, "<!doctype html>",

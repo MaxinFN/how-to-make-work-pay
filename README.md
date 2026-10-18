@@ -15,7 +15,7 @@
 [![条目](https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-576%20%E6%9D%A1-18794e?style=flat-square)](#目录)
 [![证据分级](https://img.shields.io/badge/%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7-A%20518%20%C2%B7%20B%2051%20%C2%B7%20C%207-915930?style=flat-square)](#证据分级)
 [![原始文献](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-885%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
-[![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-CC%20BY%204.0-565a5f?style=flat-square)](#许可)
+[![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-CC%20BY--NC%204.0-565a5f?style=flat-square)](#许可)
 [![GitHub Star](https://img.shields.io/github/stars/goodseafly/how-to-make-work-pay?style=flat-square&label=Star)](https://github.com/goodseafly/how-to-make-work-pay/stargazers)
 
 ### [打开在线检索页](https://goodseafly.github.io/how-to-make-work-pay/) · [让 AI 照书回答（skill）](skills/workplace-decision-guide/README.md)
@@ -348,9 +348,9 @@ python tools/full-audit.py          # 产出对齐：README 真渲染、目录�
 
 ## 许可
 
-正文用 [CC BY 4.0](LICENSE) 发布。你可以转载、改编、商用，不必事先征得同意，但要做到三件事：写明出处「高性价比职场指南」并附仓库链接；附上许可证链接 https://creativecommons.org/licenses/by/4.0/ ；改过内容的要写明改过。
+正文按 [CC BY-NC 4.0](LICENSE) 发布：可以转载、改编，不必事先征得同意，**但禁止商业使用**——收费、打包进课程或付费资料、印刷销售、用于商业宣传，都算商用，须先取得作者授权（通过 [issue](https://github.com/goodseafly/how-to-make-work-pay/issues) 联系）。非商业使用要遵守两个条件：写明出处「高性价比职场指南」并附仓库链接，附上许可证链接 https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans ，改过内容的要写明改过。
 
-**署名不是客套，是这本书唯一的条件。** 576 条里每一条的成本、收益、证据等级和来源，都是逐条查证、逐条核定之后写下来的；518 条 A 级依据核到了法律法规、部委规章和官方统计的原文，885 处链接一条条点过。做号、做视频、印出来发给同事、搁进自己的资料库，都可以，把出处留下就行。与其被人抹掉署名抄走，不如你正大光明拿去用一份。
+**出处不是客套，是这本书的底线。** 576 条里每一条的成本、收益、证据等级和来源，都是逐条查证、逐条核定之后写下来的；518 条 A 级依据核到了法律法规、部委规章和官方统计的原文，885 处链接一条条点过。非商业地拿去用——做笔记、发给同事、搁进自己的资料库——把出处留下就行。
 
 书里的法条、社保比例、假期天数和各项标准经常更新。**转载或者拿去用的时候，请同时写上你同步的是哪一天的版本。**
 
@@ -368,11 +368,11 @@ python tools/full-audit.py          # 产出对齐：README 真渲染、目录�
 
 ## 别人拿这本书做的事
 
-现在还没有——这本书刚做出来。**想做的话不用先问，按许可来就行：** CC BY 4.0 允许转载、改编和商用，署名即可。做打勾清单、做小程序、做成短视频、翻成别的语言、印出来发给同事，都行。
+现在还没有——这本书刚做出来。**非商业的用途不用先问**，把出处和版本日期带上就行：做打勾清单、做成短视频、翻成别的语言、印出来发给同事，都可以。**要商用**——收费、进课程、印出来卖——先通过 [issue](https://github.com/goodseafly/how-to-make-work-pay/issues) 取得授权。
 
 不想自己做图？[promo/](promo/) 里有现成的一包：12 张场景卡和算账卡、3 条口播稿、三种长度的[简介](promo/简介.md)，下载即用，条目出处都标好了。
 
-做好了[提一个 issue](https://github.com/goodseafly/how-to-make-work-pay/issues)告诉我，我把它加到这里。**开放的许可值钱的地方就在这里：不用等谁点头，谁都能接着做。**
+做好了[提一个 issue](https://github.com/goodseafly/how-to-make-work-pay/issues)告诉我，我把它加到这里。
 
 ## 赞赏
 

@@ -54,7 +54,7 @@
 
 ## X · 单条
 
-576 条中国职场规定，每条写清花掉什么、换回什么、依据是哪份文件第几条。518 条依据是法律法规与官方统计原文，885 处链接可以逐条点回原文。免费，CC BY 4.0，网页可搜、PDF 与 EPUB 可下：https://goodseafly.github.io/how-to-make-work-pay/
+576 条中国职场规定，每条写清花掉什么、换回什么、依据是哪份文件第几条。518 条依据是法律法规与官方统计原文，885 处链接可以逐条点回原文。免费阅读；正文 CC BY-NC 4.0（禁止商用），网页可搜、PDF 与 EPUB 可下：https://goodseafly.github.io/how-to-make-work-pay/
 
 ---
 
@@ -70,7 +70,7 @@
 
 3/ 576 条里 518 条的依据是法律法规、部委规章、官方统计原文，885 处链接可点回原文。另有 7 条只查得到行业通行做法，如实标成 C 级。
 
-4/ 免费，CC BY 4.0，可转载可改编，署名就行。网页能搜，PDF 与 EPUB 也能下：https://goodseafly.github.io/how-to-make-work-pay/
+4/ 免费阅读。正文 CC BY-NC 4.0：可转载可改编，署名就行，禁止商用。网页能搜，PDF 与 EPUB 也能下：https://goodseafly.github.io/how-to-make-work-pay/
 
 ---
 

@@ -160,8 +160,8 @@ def about_md(total, grades):
         "- 在线检索页、离线单文件、PDF、EPUB 四样，都由 tools/ 下的脚本从 book/ 里的正文现生成\n"
         "- 每条来源的核实记录：docs/核实记录/\n"
         "正文里指向仓库内其他文件的链接已改成书内跳转。\n\n"
-        "正文以 CC BY 4.0 发布（https://creativecommons.org/licenses/by/4.0/）。"
-        "可以转载、改编、商用，要写明出处「高性价比职场指南」并附仓库链接，改过内容的要注明改过。"
+        "正文以 CC BY-NC 4.0 发布（https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans）。"
+        "可以转载、改编，禁止商业使用，要写明出处「高性价比职场指南」并附仓库链接，改过内容的要注明改过。"
         "书里的法条、社保比例、假期天数和各项标准经常更新，转载时请同时写上你同步的是哪一天的版本。\n"
         % (stamp, total, grades["A"], grades["B"], grades["C"])
     )
@@ -294,7 +294,7 @@ def main():
            '    <dc:creator>%s</dc:creator>\n'
            '    <dc:description>%s</dc:description>\n'
            '    <dc:source>%s</dc:source>\n'
-           '    <dc:rights>CC BY 4.0</dc:rights>\n'
+           '    <dc:rights>CC BY-NC 4.0</dc:rights>\n'
            '    <meta property="dcterms:modified">%s</meta>\n'
            '    <meta name="generator" content="tools/build-epub.py"/>\n'
            '  </metadata>\n'
