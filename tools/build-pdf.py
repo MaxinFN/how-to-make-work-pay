@@ -299,7 +299,7 @@ def main():
 
 正文里指向书内其他节的链接、以及全部「第 X 节第 Y 条」交叉引用，都做成了书内跳转；每节正文后面跟着该节的核实记录（引用原文的逐条核对过程）。
 
-正文按 CC BY 4.0 发布（https://creativecommons.org/licenses/by/4.0/）。可以转载、改编、商用，要写明出处「%s」，改过内容的要注明改过。
+正文按 CC BY-NC 4.0 发布（https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans）：可以转载、摘编、改编，须署名并注明出处，不得用于商业用途；印制成书销售、付费课程、付费社群都算商业使用，须事先取得书面授权。排版模板来自 HowToLiveBetter（CC BY 4.0），模板那部分的许可与署名不受本声明影响。
 """ % (STAMP, BOOKTITLE)
 
     pages = [
