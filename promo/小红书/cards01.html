@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#111; font-family:"Noto Sans SC","Source Han Sans SC","Microsoft YaHei",sans-serif; }
+
+  .cover{ justify-content:space-between; }
+  .cover .foot{ display:none; }
+  .cover .notefoot{ margin-top:0; }
+  .cover .notefoot .law{ display:block; margin-top:18px; font-size:28px; color:#6E665C; }
+  .card{
+    width:1080px; height:1440px; position:relative; overflow:hidden;
+    background:#1F1C1A; color:#F5F2EC;
+    display:flex; flex-direction:column;
+    padding:96px 88px 84px;
+  }
+  /* 极淡噪点 */
+  .card::before{
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:.055;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+    mix-blend-mode:screen;
+  }
+  /* 细边框，文件感 */
+  .frame{ position:absolute; inset:52px; border:1px solid rgba(245,242,236,.13); }
+
+  .kicker{
+    font-size:32px; letter-spacing:.22em; color:#9C948A; margin-bottom:44px;
+    font-weight:500;
+  }
+  .kicker b{ color:#D33F32; font-weight:700; }
+
+  .hero{
+    font-size:224px; line-height:.94; font-weight:900; letter-spacing:-.02em;
+    color:#F5F2EC;
+  }
+  .hero .dim{ color:#8A8278; }
+
+  .sub{ margin-top:56px; font-size:46px; font-weight:700; color:#B5ADA2; letter-spacing:.02em; }
+  .bigred{
+    margin-top:20px; font-size:126px; line-height:1.06; font-weight:900; letter-spacing:-.01em;
+    color:#D33F32;
+  }
+  .notefoot{
+    margin-top:auto; padding-top:40px;
+    border-top:1px solid rgba(245,242,236,.16);
+    font-size:34px; color:#B5ADA2; font-weight:500; line-height:1.5;
+  }
+  .notefoot b{ color:#F5F2EC; font-weight:700; }
+  .sub em{ font-style:normal; color:#D33F32; }
+
+  .foot{
+    position:absolute; left:88px; right:88px; bottom:96px;
+    font-size:30px; color:#8A8278; letter-spacing:.04em;
+    display:flex; justify-content:space-between; align-items:flex-end;
+  }
+
+  /* 印章 */
+  .seal{
+    position:absolute; width:300px; height:300px;
+    right:96px; top:300px; transform:rotate(-11deg);
+    display:flex; align-items:center; justify-content:center;
+    border:9px solid #D33F32; border-radius:6px;
+    color:#D33F32; font-size:118px; font-weight:900; letter-spacing:.04em;
+    line-height:1;
+    filter:url(#rough);
+    opacity:.94;
+  }
+  .seal::after{
+    content:""; position:absolute; inset:12px; border:2px solid rgba(211,63,50,.55); border-radius:3px;
+  }
+
+  /* 内页 */
+  .h2{ font-size:74px; font-weight:900; line-height:1.18; letter-spacing:-.01em; }
+  .h2 u{ text-decoration:none; color:#D33F32; }
+
+  .rows{ margin-top:96px; display:flex; flex-direction:column; gap:0; }
+  .row{
+    display:flex; align-items:flex-start; gap:34px;
+    padding:40px 0; border-top:1px solid rgba(245,242,236,.16);
+  }
+  .row:last-child{ border-bottom:1px solid rgba(245,242,236,.16); }
+  .num{
+    font-size:40px; font-weight:900; color:#D33F32; width:64px; flex:none;
+    line-height:1.1; padding-top:6px;
+  }
+  .txt{ font-size:44px; line-height:1.5; font-weight:500; }
+  .txt small{ display:block; font-size:30px; color:#9C948A; margin-top:10px; font-weight:400; line-height:1.4; }
+  .cross{ color:#6E665C; text-decoration:line-through; text-decoration-thickness:5px; text-decoration-color:#D33F32; }
+
+  .tri{ margin-top:96px; display:flex; flex-direction:column; }
+  .tri .item{
+    display:flex; align-items:baseline; gap:36px;
+    padding:52px 0; border-top:1px solid rgba(245,242,236,.16);
+  }
+  .tri .item:last-child{ border-bottom:1px solid rgba(245,242,236,.16); }
+  .code{ font-size:96px; font-weight:900; width:220px; flex:none; letter-spacing:-.03em; }
+  .code.red{ color:#D33F32; }
+  .code.grey{ color:#4A453E; }
+  .desc{ font-size:40px; line-height:1.45; font-weight:500; }
+  .desc small{ display:block; font-size:27px; color:#8A8278; margin-top:8px; font-weight:400; }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <filter id="rough">
+    <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<!-- 01 封面 -->
+<div class="card cover" id="c1">
+  <div class="frame"></div>
+  <div class="seal">别签</div>
+  <div>
+    <div class="kicker">解除劳动合同证明 · <b>签字之前</b></div>
+    <div class="hero">个人<span class="dim">原因</span></div>
+  </div>
+  <div>
+    <div class="sub">签之前，看一眼解除方式</div>
+    <div class="bigred">失业金<br>就没了</div>
+  </div>
+  <div class="notefoot">同一张纸还要看：<b>补偿写的是 N 还是 2N</b>　·　<b>离职当天结清工资</b>
+    <span class="law">社会保险法 第四十五条 · 失业保险金申领发放办法 第四条</span>
+  </div>
+</div>
+
+<!-- 01 内页1：三个条件 -->
+<div class="card" id="c2">
+  <div class="frame"></div>
+  <div class="kicker">领失业金 · 三个条件同时满足</div>
+  <div class="h2">缺一个，<u>就领不到</u></div>
+  <div class="rows">
+    <div class="row">
+      <div class="num">01</div>
+      <div class="txt">单位和个人缴失业保险满一年<small>缴满一年是门槛，缴得越久领得越久</small></div>
+    </div>
+    <div class="row">
+      <div class="num">02</div>
+      <div class="txt">不是你本人要走的<small>合同到期不续、公司解除、被开除辞退，都算</small></div>
+    </div>
+    <div class="row">
+      <div class="num">03</div>
+      <div class="txt">办了失业登记，还在找工作<small>去人社局或线上办，登记本身不花钱</small></div>
+    </div>
+    <div class="row">
+      <div class="num" style="color:#4A453E">×</div>
+      <div class="txt"><span class="cross">自己写「个人原因」</span><small>写了，第 02 条就不成立——所以签字前先看公司写的是哪一种</small></div>
+    </div>
+  </div>
+  <div class="foot"><span>社会保险法 第四十五条</span><span>02</span></div>
+</div>
+
+<!-- 01 内页2：N / N+1 / 2N -->
+<div class="card" id="c3">
+  <div class="frame"></div>
+  <div class="kicker">谈离职 · 三个代号各对应一条</div>
+  <div class="h2">「N+2」<br>法条里<u>找不到</u></div>
+  <div class="tri">
+    <div class="item">
+      <div class="code">N</div>
+      <div class="desc">经济补偿<small>合法辞退、经济性裁员，每满一年一个月</small></div>
+    </div>
+    <div class="item">
+      <div class="code">N+1</div>
+      <div class="desc">多出的「1」是代通知金<small>不提前三十天通知，选择当天让你走</small></div>
+    </div>
+    <div class="item">
+      <div class="code red">2N</div>
+      <div class="desc">违法解除的赔偿金<small>没有法定理由就解除，给了 2N 不再给 N</small></div>
+    </div>
+  </div>
+  <div class="foot"><span>劳动合同法 第四十、四十六、四十七、八十七条</span><span>03</span></div>
+</div>
+
+</body>
+</html>

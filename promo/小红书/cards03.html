@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#111; font-family:"Noto Sans SC","Source Han Sans SC","Microsoft YaHei",sans-serif; }
+
+  .cover{ justify-content:space-between; }
+  .cover .foot{ display:none; }
+  .cover .notefoot{ margin-top:0; }
+  .cover .notefoot .law{ display:block; margin-top:18px; font-size:28px; color:#6E665C; }
+  .card{
+    width:1080px; height:1440px; position:relative; overflow:hidden;
+    background:#1F1C1A; color:#F5F2EC;
+    display:flex; flex-direction:column;
+    padding:96px 88px 84px;
+  }
+  /* 极淡噪点 */
+  .card::before{
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:.055;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+    mix-blend-mode:screen;
+  }
+  /* 细边框，文件感 */
+  .frame{ position:absolute; inset:52px; border:1px solid rgba(245,242,236,.13); }
+
+  .kicker{
+    font-size:32px; letter-spacing:.22em; color:#9C948A; margin-bottom:44px;
+    font-weight:500;
+  }
+  .kicker b{ color:#D33F32; font-weight:700; }
+
+  .hero{
+    font-size:224px; line-height:.94; font-weight:900; letter-spacing:-.02em;
+    color:#F5F2EC;
+  }
+  .hero .dim{ color:#8A8278; }
+
+  .sub{ margin-top:56px; font-size:46px; font-weight:700; color:#B5ADA2; letter-spacing:.02em; }
+  .bigred{
+    margin-top:20px; font-size:126px; line-height:1.06; font-weight:900; letter-spacing:-.01em;
+    color:#D33F32;
+  }
+  .notefoot{
+    margin-top:auto; padding-top:40px;
+    border-top:1px solid rgba(245,242,236,.16);
+    font-size:34px; color:#B5ADA2; font-weight:500; line-height:1.5;
+  }
+  .notefoot b{ color:#F5F2EC; font-weight:700; }
+  .sub em{ font-style:normal; color:#D33F32; }
+
+  .foot{
+    position:absolute; left:88px; right:88px; bottom:96px;
+    font-size:30px; color:#8A8278; letter-spacing:.04em;
+    display:flex; justify-content:space-between; align-items:flex-end;
+  }
+
+  /* 印章 */
+  .seal{
+    position:absolute; width:300px; height:300px;
+    right:96px; top:300px; transform:rotate(-11deg);
+    display:flex; align-items:center; justify-content:center;
+    border:9px solid #D33F32; border-radius:6px;
+    color:#D33F32; font-size:118px; font-weight:900; letter-spacing:.04em;
+    line-height:1;
+    filter:url(#rough);
+    opacity:.94;
+  }
+  .seal::after{
+    content:""; position:absolute; inset:12px; border:2px solid rgba(211,63,50,.55); border-radius:3px;
+  }
+
+  /* 内页 */
+  .h2{ font-size:74px; font-weight:900; line-height:1.18; letter-spacing:-.01em; }
+  .h2 u{ text-decoration:none; color:#D33F32; }
+
+  .rows{ margin-top:96px; display:flex; flex-direction:column; gap:0; }
+  .row{
+    display:flex; align-items:flex-start; gap:34px;
+    padding:40px 0; border-top:1px solid rgba(245,242,236,.16);
+  }
+  .row:last-child{ border-bottom:1px solid rgba(245,242,236,.16); }
+  .num{
+    font-size:40px; font-weight:900; color:#D33F32; width:64px; flex:none;
+    line-height:1.1; padding-top:6px;
+  }
+  .txt{ font-size:44px; line-height:1.5; font-weight:500; }
+  .txt small{ display:block; font-size:30px; color:#9C948A; margin-top:10px; font-weight:400; line-height:1.4; }
+  .cross{ color:#6E665C; text-decoration:line-through; text-decoration-thickness:5px; text-decoration-color:#D33F32; }
+
+  .tri{ margin-top:96px; display:flex; flex-direction:column; }
+  .tri .item{
+    display:flex; align-items:baseline; gap:36px;
+    padding:52px 0; border-top:1px solid rgba(245,242,236,.16);
+  }
+  .tri .item:last-child{ border-bottom:1px solid rgba(245,242,236,.16); }
+  .code{ font-size:96px; font-weight:900; width:220px; flex:none; letter-spacing:-.03em; }
+  .code.red{ color:#D33F32; }
+  .code.grey{ color:#4A453E; }
+  .desc{ font-size:40px; line-height:1.45; font-weight:500; }
+  .desc small{ display:block; font-size:27px; color:#8A8278; margin-top:8px; font-weight:400; }
+
+  s{ text-decoration:line-through; text-decoration-thickness:16px; text-decoration-color:#D33F32; }
+  .rows{ margin-top:88px; }
+  .row{ padding:42px 0; }
+  .tri{ margin-top:88px; }
+  .tri .item{ padding:48px 0; }
+</style>
+</head>
+<body>
+<div class="card cover" id="e1">
+  <div class="frame"></div>
+  <div class="seal">别拖</div>
+  <div>
+    <div class="kicker">入职之后 · 没签书面合同</div>
+    <div class="hero">11 个月</div>
+  </div>
+  <div>
+    <div class="sub">最多能多要</div>
+    <div class="bigred">双倍工资</div>
+  </div>
+  <div class="notefoot">双薪从满一个月的次日开始，给到补签前一天；满一年还没签，视为已订无固定期限合同
+    <span class="law">劳动合同法 第八十二条 · 实施条例 第六、七条</span>
+  </div>
+</div>
+
+<div class="card" id="e2">
+  <div class="frame"></div>
+  <div class="kicker">这笔钱 · 怎么算出来</div>
+  <div class="h2">时间线四个点</div>
+  <div class="rows"><div class="row"><div class="num">1</div><div class="txt">满 1 个月未签<small>双倍工资从第二个月开始</small></div></div><div class="row"><div class="num">2</div><div class="txt">到补签那天为止<small>给到签订书面合同的前一日</small></div></div><div class="row"><div class="num">3</div><div class="txt">满 1 年还没签<small>封顶 11 个月</small></div></div><div class="row"><div class="num">4</div><div class="txt">同时视为<small>已经订了无固定期限合同</small></div></div></div>
+  <div class="foot"><span>劳动合同法 第八十二条 · 实施条例 第六、七条</span><span>02</span></div>
+</div>
+
+<div class="card" id="e3">
+  <div class="frame"></div>
+  <div class="kicker">仲裁之前 · 收好三样</div>
+  <div class="h2">自己去主张</div>
+  <div class="rows"><div class="row"><div class="num">1</div><div class="txt">打卡与考勤<small>截图要带时间</small></div></div><div class="row"><div class="num">2</div><div class="txt">工资流水<small>银行流水最硬</small></div></div><div class="row"><div class="num">3</div><div class="txt">工作群记录<small>排班、派活、汇报</small></div></div><div class="row"><div class="num">4</div><div class="txt">时效一年<small>从知道或应当知道权利被侵害那天起算</small></div></div></div>
+  <div class="foot"><span>劳动合同法 第八十二条</span><span>03</span></div>
+</div>
+</body>
+</html>
